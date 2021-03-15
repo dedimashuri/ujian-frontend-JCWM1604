@@ -67,7 +67,7 @@ class ProductDetail extends Component {
       axios
         .get(`${API_URL}/users/${id}`)
         .then((res) => {
-          var cart = res.data.cart; //cart adalah array
+          var cart = res.data.cart;
 
           let findIdx = cart.findIndex((val) => val.id == idprod);
           if (findIdx < 0) {
@@ -75,11 +75,9 @@ class ProductDetail extends Component {
               ...this.state.product,
               qty: this.state.qty,
             };
-            // rekayasa array
             cart.push(data);
-            // update data
             axios
-              .patch(`${API_URL}/users/${id}`, { cart: cart }) // expektasi data yang dikrim harus object
+              .patch(`${API_URL}/users/${id}`, { cart: cart })
               .then((res1) => {
                 console.log(res1.data);
                 this.props.CartAction(res1.data.cart);
@@ -89,9 +87,8 @@ class ProductDetail extends Component {
                 console.log(err);
               });
           } else {
-            let qtyakhir = cart[findIdx].qty + this.state.qty; //4 //2
+            let qtyakhir = cart[findIdx].qty + this.state.qty; 
             if (qtyakhir > stok) {
-              // rekayasa array
               var qtyablebuy = stok - cart[findIdx].qty;
               alert(
                 "barang dicart melebihi stok barang yang bisa dibeli hanya " +

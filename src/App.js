@@ -53,7 +53,6 @@ class App extends Component {
             <Route path="/products" exact component={Products} />
             <Route path="/product/:idprod" component={ProductDetail} />
             <Route path="/login" exact component={Login} />
-            <Route path="/register" exact component={Register} />
             <Route path="*" component={NotFound} />
           </Switch>
           <ToastContainer />
@@ -69,7 +68,6 @@ class App extends Component {
           <Route path="/cart" exact component={Cart} />
           <Route path="/history" exact component={History} />
           <Route path="/login" exact component={Login} />
-          <Route path="/register" exact component={Register} />
           <Route path="*" component={NotFound} />
         </Switch>
         <ToastContainer />

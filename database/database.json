@@ -23,7 +23,7 @@
       "name": "Nike Revolt",
       "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80",
       "harga": 1765000,
-      "stok": 9,
+      "stok": 8,
       "categoryId": "3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti nullam ac tortor vitae purus faucibus. In fermentum et sollicitudin ac orci phasellus egestas tellus. Eget sit amet tellus cras. "
     },
@@ -332,6 +332,30 @@
       "bankId": 0,
       "bukti": "",
       "id": 13
+    },
+    {
+      "userId": 10,
+      "tanggal": "2021-03-15T08:18:29.097Z",
+      "status": "belum bayar",
+      "products": [
+        {
+          "id": 3,
+          "name": "Nike Revolt",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80",
+          "harga": 1765000,
+          "stok": 9,
+          "categoryId": "3",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti nullam ac tortor vitae purus faucibus. In fermentum et sollicitudin ac orci phasellus egestas tellus. Eget sit amet tellus cras. ",
+          "category": {
+            "id": 3,
+            "nama": "NIKE"
+          },
+          "qty": 1
+        }
+      ],
+      "bankId": 0,
+      "bukti": "",
+      "id": 14
     }
   ],
   "transactionsdetails": [],
